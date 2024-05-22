@@ -1,0 +1,130 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Mis Primeros Pasos en Bootstrap</h1>
+</div>
+
+
+<h3>Carrucel</h3>
+<div id="carouselEjemplo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="\image\luffy1.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item active">
+            <img src="\image\luffy2.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item active">
+            <img src="\image\luffy3.jpg" class="d-block w-100">
+        </div>
+    </div> 
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-tarjet="#carouselEjemplo" data-bs-ride-to="0" class="active"></button>
+        <button type="button" data-bs-tarjet="#carouselEjemplo" data-bs-ride-to="1"></button>
+        <button type="button" data-bs-tarjet="#carouselEjemplo" data-bs-ride-to="2"></button>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-tarjet="#carouselEjemplo" data-bs-ride="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-tarjet="#carouselEjemplo" data-bs-ride="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<h3>Tabs</h3>
+<ul clas="nav nav-tabs">
+    <li class="nav-item">
+        <buuton class="nav-link active" data-bs-toggle="tab" data-bs-tarjet="#tab1">
+            Tab 1
+        </buuton>
+    </li>
+
+    <li class="nav-item">
+        <buuton class="nav-link" data-bs-toggle="tab" data-bs-tarjet="#tab2">
+            Tab 2
+        </buuton>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="tab1">
+        Buenos dias
+    </div>
+
+    <div class="tab-pane fade show" id="tab2">
+        Buenos dias
+    </div>
+</div>
+
+
+<h3>Toast</h3>
+<button type="button" class="btn btn-primary" id="liveToastBtn">Mostrar Toast</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">POO II</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hola Mundo.
+    </div>
+  </div>
+</div>
+
+<h3>Modales</h3>
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Hola</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Hola que hace</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Tabla</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Carrera</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Carlos</td>
+      <td>Marin</td>
+      <td>TI</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
